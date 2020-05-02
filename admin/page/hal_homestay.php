@@ -1,36 +1,41 @@
-<div class="col-sm-9">
-<h2><small>Data Homestay</small></h2>
-<hr>
-<form method="" class="form-group"  align="right">
-  <a  href="?halaman=homestay&aksi=tambah_homestay" class="btn btn-info" title="tambah">
-    <span class="glyphicon glyphicon-check"></span> Tambah Data
-  </a>
-</form>
-<div class="panel panel-default">
-  <div class="panel-heading">
-       <h4>Data Homestay</h4>
-  </div>
-  <div class="panel-body">
-      <div class="table-responsive">
-          <table class="table table-striped table-bordered table-hover" id="dataTables-example">
-              <thead>
-                  <tr>
-                      <th class="text-center">No</th>
-                      <!-- <th class="text-center">ID Homestay</th>  -->
-                      <th class="text-center">Nama</th>
-                      <th class="text-center">Alamat</th>
-                      <th class="text-center">No HP</th>
-                      <th class="text-center">Lokasi</th>
-                      <th class="text-center">Aksi</th>
-                  </tr>
-              </thead>
-              <tbody>
-                <?php
-                    include 'backend/select_homestay.php';
-                  ?>
-              </tbody>
-           </table>
-       </div>
-   </div>
-</div>
-</div>
+<div class="container-fluid">
+          <div class="d-sm-flex align-items-center justify-content-between mb-4">
+            <h1 class="h3 mb-0 text-gray-800">Data Homestay</h1>
+            <a href="?halaman=homestay&aksi=tambah_homestay" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-home fa-sm text-white-50"></i> Tambah Data</a>
+          </div>
+
+
+          <div class="row">
+            <div class="col-xl-12 col-lg-7">
+              <div class="card shadow mb-12">
+                <div class="card-header py-12">
+                  <h6 class="m-0 font-weight-bold text-primary">Illustrations</h6>
+                </div>
+
+
+                <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table table-striped table-bordered table-hover" id="dataTables-example">
+                        <thead>
+                            <tr>
+                                <th class="text-center">No</th>
+                                <th class="text-center">Nama</th>
+                                <th class="text-center">Alamat</th>
+                                <th class="text-center">No HP</th>
+                                <th class="text-center">Aksi</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <?php
+                                include 'backend/select_homestay.php';
+                            ?>
+                        </tbody>
+                    </table>
+                </div>
+                </div>               
+              </div>
+            </div>
+          </div>
+        </div>
+
+
